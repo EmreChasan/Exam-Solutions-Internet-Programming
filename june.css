@@ -1,0 +1,74 @@
+body { 
+    margin: 0px;
+ }
+ /* elemets */
+header{
+    color: white;
+    background-color: blue;
+    text-align: center;
+	padding: 1em;
+}
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+	padding: 1em;
+	clear: left;
+}
+nav {
+    background-color: lightgray;
+    float: left;
+    width: 14%;
+    padding-bottom: 15%;
+}
+aside{
+    background-color:#FAEBD7;
+    float: right;
+    width: 14%;
+	text-align: center;
+	padding-bottom: 21.4%;
+}
+
+section {
+	float: left;
+    width: 70%; 
+    margin-left: 10px;	
+	font-family: "Times New Roman", Times, serif;
+}
+img{
+    float: right;
+	height: 90%;
+}
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+/*classes*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*id*/
+#song{
+	float:right;
+	
+	
+}

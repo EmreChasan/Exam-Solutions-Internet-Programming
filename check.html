@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	
+		<meta charset = "UTF-8">
+		
+		
+	</head>
+	<body>
+	<div style="border-style:solid; border-color:red; background-color:black; color:white;">
+	<div style="margin-left:5px; margin-bottom:5px; margin-top:5px;">
+	<script>
+		function getParams(){
+			var idx = document.URL.indexOf('?');
+			var params = new Array();
+				if (idx != -1) {
+					var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+					for (var i=0; i<pairs.length; i++){
+						nameVal = pairs[i].split('=');
+						params[nameVal[0]] = nameVal[1];
+						}
+					}
+			return params;
+			}
+			params = getParams();
+			onoma = unescape(params["name"]);
+			email = unescape(params["emailadress"]);
+			city = unescape(params["cities4"]);
+			
+			
+			hob = unescape(params["v1"]);
+			hob2 = unescape(params["v2"]);
+			hob3 = unescape(params["v3"]);
+			
+			document.write("- " + onoma + "<br><br>");
+			
+			
+			
+			if(hob=="undefined")
+				{}
+			else {
+			 document.write("-" + hob + ",");
+			 }
+			if(hob2=="undefined") {
+				}
+			else {
+			 document.write("-" + hob2 + ",");
+			 }
+			 if(hob3=="undefined")
+				{}
+			else {
+			 document.write("-" + hob3 + ",");
+			}
+			document.write("<br> <br> -" + city + "<br> <br>");
+			document.write("-" + email + "<br><br>");
+			
+	</script>
+	</div>
+	</div>
+	</body>
+</html>
